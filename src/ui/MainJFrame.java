@@ -1,23 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package ui;
 
-
+import Business.DB4OUtil.DB4OUtil;
+import Business.EcoSystem;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Organization.Organization;
+import Business.UserAccount.UserAccount;
+import java.awt.CardLayout;
 import java.awt.Color;
+import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 /**
  *
- * @author nehadevarapalli
+ * @author aakashrajawat
  */
 public class MainJFrame extends javax.swing.JFrame {
-
-    /**
-     * Creates new form MainJFrame
-     */
+    
+    private EcoSystem system;
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
+    
     public MainJFrame() {
         initComponents();
+        system = dB4OUtil.retrieveSystem();
+        signinPanel.setVisible(true);
+        signoutPanel.setVisible(false);
+        cardPanel.setVisible(false);
     }
 
     /**
@@ -42,8 +56,15 @@ public class MainJFrame extends javax.swing.JFrame {
         separatorLine4 = new javax.swing.JSeparator();
         exiticon = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        signoutPanel = new javax.swing.JPanel();
+        iconlogout = new javax.swing.JLabel();
+        cardPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(0, 23, 1600, 900));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMinimumSize(new java.awt.Dimension(1440, 900));
+        setSize(new java.awt.Dimension(1440, 900));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         signinPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -133,8 +154,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         signinPanel.add(signinFormPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 380, 350));
 
-        exiticon.setBackground(new java.awt.Color(255, 255, 255));
-        exiticon.setText("Exit");
+        exiticon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/exit.png"))); // NOI18N
         exiticon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 exiticonMousePressed(evt);
@@ -143,31 +163,149 @@ public class MainJFrame extends javax.swing.JFrame {
         signinPanel.add(exiticon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1376, 14, -1, -1));
 
         jLabel3.setForeground(new java.awt.Color(0, 0, 102));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bg3.png"))); // NOI18N
         signinPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, -10, 1520, 990));
 
         getContentPane().add(signinPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        signoutPanel.setBackground(new java.awt.Color(220, 241, 251));
+        signoutPanel.setFont(new java.awt.Font("Libian SC", 0, 14)); // NOI18N
+        signoutPanel.setPreferredSize(new java.awt.Dimension(1440, 52));
+
+        iconlogout.setFont(new java.awt.Font("Libian SC", 0, 13)); // NOI18N
+        iconlogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/signout.png"))); // NOI18N
+        iconlogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                iconlogoutMousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout signoutPanelLayout = new javax.swing.GroupLayout(signoutPanel);
+        signoutPanel.setLayout(signoutPanelLayout);
+        signoutPanelLayout.setHorizontalGroup(
+            signoutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, signoutPanelLayout.createSequentialGroup()
+                .addContainerGap(1364, Short.MAX_VALUE)
+                .addComponent(iconlogout)
+                .addGap(26, 26, 26))
+        );
+        signoutPanelLayout.setVerticalGroup(
+            signoutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(iconlogout, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(signoutPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        cardPanel.setBackground(new java.awt.Color(36, 47, 65));
+        cardPanel.setMinimumSize(new java.awt.Dimension(1440, 848));
+        cardPanel.setPreferredSize(new java.awt.Dimension(1440, 848));
+        cardPanel.setLayout(new java.awt.CardLayout());
+        getContentPane().add(cardPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 52, 1440, 848));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPasswordMouseClicked
-        // TODO add your handling code here:
-        txtPassword.setText("");
-    }//GEN-LAST:event_txtPasswordMouseClicked
-
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
 
     private void txtUsernameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsernameMouseClicked
         // TODO add your handling code here:
         txtUsername.setText("");
     }//GEN-LAST:event_txtUsernameMouseClicked
 
+    private void btnsigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsigninActionPerformed
+        // TODO add your handling code here:
+        
+        String userName = txtUsername.getText();
+        char[] passwordCharArray = txtPassword.getPassword();
+        String password = String.valueOf(passwordCharArray);
+        UserAccount userAccount=system.getUserAccountDirectory().authenticateUser(userName, password);
+        Enterprise inEnterprise=null;
+        Organization inOrganization=null;
+        
+        if(userAccount==null){
+            //Step 2: Go inside each network and check each enterprise
+            for(Network network:system.getNetworkList()){
+                //Step 2.a: check against each enterprise
+                for(Enterprise enterprise:network.getEnterpriseDirectory().getEnterpriseList()){
+                    userAccount=enterprise.getUserAccountDirectory().authenticateUser(userName, password);
+                    if(userAccount==null){
+                       //Step 3:check against each organization for each enterprise
+                       for(Organization organization:enterprise.getOrganizationDirectory().getOrganizationList()){
+                           userAccount=organization.getUserAccountDirectory().authenticateUser(userName, password);
+                           if(userAccount!=null){
+                               inEnterprise=enterprise;
+                               inOrganization=organization;
+                               break;
+                           }
+                       }  
+                    }
+                    else{
+                       inEnterprise=enterprise;
+                       break;
+                    }
+                    if(inOrganization!=null){
+                        break;
+                    }  
+                }
+                if(inEnterprise!=null){
+                    break;
+                }
+            }
+        } 
+        if(userAccount==null){
+            JOptionPane.showMessageDialog(null, "Invalid credentials", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if (!chkTerms.isSelected()){
+            JOptionPane.showMessageDialog(null, "Please agree to the terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        else{
+            //set visibility for panels
+            signinPanel.setVisible(false);
+            signoutPanel.setVisible(true);
+            cardPanel.setVisible(true);
+            //set visibility for icons
+            exiticon.setVisible(false);
+            iconlogout.setVisible(true);
+            //set cardlayout panel to display necessary
+            CardLayout layout=(CardLayout) cardPanel.getLayout();
+            cardPanel.add("workArea", userAccount.getRole().createWorkArea(cardPanel, userAccount, inOrganization, inEnterprise, system));
+            layout.next(cardPanel);
+        }
+    }//GEN-LAST:event_btnsigninActionPerformed
+
+    private void iconlogoutMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconlogoutMousePressed
+        // TODO add your handling code here:
+        //remove all layouts from the cardlayout panel
+        cardPanel.removeAll();
+        //set visibility for panels
+        signinPanel.setVisible(true);
+        signoutPanel.setVisible(false);
+        cardPanel.setVisible(false);
+        //set visibility for icons
+        exiticon.setVisible(true);
+        iconlogout.setVisible(false);
+        //reset the text fields to default values
+        txtUsername.setText("Enter Username");
+        txtPassword.setText("password");
+        chkTerms.setSelected(false);
+        //save database
+        dB4OUtil.storeSystem(system);
+    }//GEN-LAST:event_iconlogoutMousePressed
+
+    private void exiticonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exiticonMousePressed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_exiticonMousePressed
+
+    private void txtPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPasswordMouseClicked
+        // TODO add your handling code here:
+        txtPassword.setText("");
+    }//GEN-LAST:event_txtPasswordMouseClicked
+
     private void btnsigninMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsigninMouseEntered
         // TODO add your handling code here:
         btnsignin.setForeground(Color.RED);
-
+        
     }//GEN-LAST:event_btnsigninMouseEntered
 
     private void btnsigninMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsigninMouseExited
@@ -175,14 +313,9 @@ public class MainJFrame extends javax.swing.JFrame {
         btnsignin.setForeground(Color.BLACK);
     }//GEN-LAST:event_btnsigninMouseExited
 
-    private void btnsigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsigninActionPerformed
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnsigninActionPerformed
-
-    private void exiticonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exiticonMousePressed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_exiticonMousePressed
+    }//GEN-LAST:event_txtPasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -210,6 +343,21 @@ public class MainJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -221,8 +369,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnsignin;
+    private javax.swing.JPanel cardPanel;
     private javax.swing.JCheckBox chkTerms;
     private javax.swing.JLabel exiticon;
+    private javax.swing.JLabel iconlogout;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblSignin;
@@ -231,6 +381,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator separatorLine4;
     private javax.swing.JPanel signinFormPanel;
     private javax.swing.JPanel signinPanel;
+    private javax.swing.JPanel signoutPanel;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
