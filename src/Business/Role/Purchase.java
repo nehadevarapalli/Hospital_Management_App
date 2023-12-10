@@ -7,21 +7,23 @@ package Business.Role;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
+import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.PersonOrganization;
+import Business.Organization.PurchaseOrganization;
 import Business.UserAccount.UserAccount;
+import ui.Purchase.PurchaseWorkAreaJPanel;
 import javax.swing.JPanel;
-import ui.PersonRole.PersonWorkAreaJPanel;
 
 /**
  *
  * @author ashishnevan
  */
-public class PersonRole extends Role{
-
+public class Purchase extends Role{
+    
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new PersonWorkAreaJPanel(userProcessContainer, account, (PersonOrganization)organization, enterprise, business);
+        return new PurchaseWorkAreaJPanel(userProcessContainer, account, (PurchaseOrganization)organization, enterprise, business);
     }
-    
+
+
 }

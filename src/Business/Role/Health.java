@@ -7,21 +7,22 @@ package Business.Role;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
+import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.PersonOrganization;
+import Business.Organization.HealthOrganization;
 import Business.UserAccount.UserAccount;
+import ui.Health.HealthWorkAreaJPanel;
 import javax.swing.JPanel;
-import ui.PersonRole.PersonWorkAreaJPanel;
-import ui.PharmaRole.PharmaWorkAreaJPanel;
+
 /**
  *
  * @author ashishnevan
  */
-public class PharmaRole extends Role{
-
+public class Health extends Role{
+    
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new PharmaWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
+        return new HealthWorkAreaJPanel(userProcessContainer, account, (HealthOrganization)organization, enterprise, business);
     }
-    
+
 }

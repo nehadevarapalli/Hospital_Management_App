@@ -10,13 +10,13 @@ import Business.Organization.DistributionOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import ui.DistributionRole.NDistirbutionWorkAreaJPanel;
+import ui.Distributor.NDistirbutionWorkAreaJPanel;
 
 /**
  *
  * @author ashishnevan
  */
-public class DistributionRole extends Role {
+public class Distributor extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {

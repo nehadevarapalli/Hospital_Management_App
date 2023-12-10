@@ -9,20 +9,20 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.EconomyOrganization;
+import Business.Organization.LabOrganization;
 import Business.UserAccount.UserAccount;
-import ui.EconomyRole.EconomyWorkAreaJPanel;
+import ui.Lab.LabAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
  * @author ashishnevan
  */
-public class EconomyRole extends Role{
+public class Lab extends Role{
     
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new EconomyWorkAreaJPanel(userProcessContainer, account, (EconomyOrganization)organization, enterprise, business);
+        return new LabAreaJPanel(userProcessContainer, account, (LabOrganization)organization, enterprise, business);
     }
 
     
