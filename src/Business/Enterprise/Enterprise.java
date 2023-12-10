@@ -1,15 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Enterprise;
+
+import Business.Network.Network;
+import Business.Organization.Organization;
+import Business.Organization.OrganizationDirectory;
 
 /**
  *
  * @author nehadevarapalli
  */
-public class Enterprise {
-
+public abstract class Enterprise extends Organization{
+    
     private EnterpriseType enterpriseType;
     private OrganizationDirectory organizationDirectory;
     private Network network;
@@ -25,24 +30,23 @@ public class Enterprise {
     public OrganizationDirectory getOrganizationDirectory() {
         return organizationDirectory;
     }
-
-    public enum EnterpriseType {
-        Hospital("Hospital"), Service("Service"), Pharmaceutical("Pharmaceutical"), Government("Government");
-
+    
+    
+    public enum EnterpriseType{
+        Hospital("Hospital") , Service("Service") , Pharmaceutical("Pharmaceutical") , Government("Government");
+        
         private String value;
-
-        private EnterpriseType(String value) {
-            this.value = value;
+        
+        private EnterpriseType(String value){
+            this.value=value;
         }
-
         public String getValue() {
             return value;
         }
-
         @Override
-        public String toString() {
-            return value;
-        }
+        public String toString(){
+        return value;
+    }
     }
 
     public EnterpriseType getEnterpriseType() {
@@ -52,11 +56,11 @@ public class Enterprise {
     public void setEnterpriseType(EnterpriseType enterpriseType) {
         this.enterpriseType = enterpriseType;
     }
-
-    public Enterprise(String name, EnterpriseType type, Network network) {
+    
+    public Enterprise(String name,EnterpriseType type, Network network){
         super(name);
-        this.enterpriseType = type;
+        this.enterpriseType=type;
         this.network = network;
-        organizationDirectory = new OrganizationDirectory();
+        organizationDirectory=new OrganizationDirectory();
     }
 }
