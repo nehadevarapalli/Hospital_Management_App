@@ -154,7 +154,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         signinPanel.add(signinFormPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 380, 350));
 
-        exiticon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/exit.png"))); // NOI18N
+        exiticon.setForeground(new java.awt.Color(0, 0, 0));
+        exiticon.setText("Exit");
         exiticon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 exiticonMousePressed(evt);
