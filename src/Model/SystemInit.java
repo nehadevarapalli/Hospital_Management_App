@@ -24,9 +24,9 @@ public class SystemInit {
         //initialize some organizations
         //have some employees 
         //create user account
-        Employee employee = system.getEmployeeDirectory().createEmployee("sysadmin");
+        Employee employee = system.getEmployeeDirectory().createEmployee("superuser");
 
-        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdmin());
+        UserAccount ua = system.getUserAccountDirectory().createUserAccount("superuser", "superuser", employee, new SystemAdmin());
 
         return system;
     }

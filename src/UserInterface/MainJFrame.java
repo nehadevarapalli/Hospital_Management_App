@@ -162,7 +162,7 @@ public class MainJFrame extends javax.swing.JFrame {
         signinPanel.add(exiticon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1376, 14, -1, -1));
 
         jLabel3.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/logo.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/health/DALL·E Logo child vaccination.png"))); // NOI18N
         signinPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, -10, 1520, 990));
 
         getContentPane().add(signinPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -253,10 +253,6 @@ public class MainJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Invalid credentials", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if (!chkTerms.isSelected()){
-            JOptionPane.showMessageDialog(null, "Please agree to the terms of service", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
         else{
             //set visibility for panels
             signinPanel.setVisible(false);
@@ -286,7 +282,6 @@ public class MainJFrame extends javax.swing.JFrame {
         //reset the text fields to default values
         txtUsername.setText("Enter Username");
         txtPassword.setText("password");
-        chkTerms.setSelected(false);
         //save database
         dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_iconlogoutMousePressed

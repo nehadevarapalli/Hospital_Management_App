@@ -251,7 +251,7 @@
               <Color blue="66" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Assets/logo.png"/>
+              <Image iconType="3" name="/Assets/health/DALL&#xb7;E Logo child vaccination.png"/>
             </Property>
           </Properties>
           <Constraints>
