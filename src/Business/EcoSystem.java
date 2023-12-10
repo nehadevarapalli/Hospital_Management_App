@@ -7,7 +7,7 @@ package Business;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Role.Role;
-import Business.Role.SystemAdminRole;
+import Business.Role.SystemAdmin;
 import java.util.ArrayList;
 
 /**
@@ -35,7 +35,7 @@ public class EcoSystem extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roleList = new ArrayList<Role>();
-        roleList.add(new SystemAdminRole());
+        roleList.add(new SystemAdmin());
         return roleList;
     }
 

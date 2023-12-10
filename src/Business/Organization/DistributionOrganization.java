@@ -5,8 +5,8 @@
  */
 package Business.Organization;
 
-import Business.Role.DistributionRole;
-import Business.Role.DoctorRole;
+import Business.Role.Distributor;
+import Business.Role.Doctor;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class DistributionOrganization extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new DistributionRole());
+        roles.add(new Distributor());
         return roles;
     }
 }

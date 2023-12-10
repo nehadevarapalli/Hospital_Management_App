@@ -5,8 +5,8 @@
  */
 package Business.Organization;
 
-import Business.Role.DoctorRole;
-import Business.Role.EconomyRole;
+import Business.Role.Doctor;
+import Business.Role.Econ;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ public class EconomyOrganization extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new EconomyRole());
+        roles.add(new Econ());
         return roles;
     }
 }

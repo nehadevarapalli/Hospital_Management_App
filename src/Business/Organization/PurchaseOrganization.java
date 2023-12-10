@@ -5,8 +5,8 @@
  */
 package Business.Organization;
 
-import Business.Role.DoctorRole;
-import Business.Role.PurchaseRole;
+import Business.Role.Doctor;
+import Business.Role.Purchase;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -36,7 +36,7 @@ public class PurchaseOrganization extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new PurchaseRole());
+        roles.add(new Purchase());
         return roles;
     }
     public PurchaseInventory addPI(PurchaseInventory pi){
