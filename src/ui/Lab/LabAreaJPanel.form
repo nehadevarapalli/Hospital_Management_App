@@ -725,12 +725,12 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/lab2.gif"/>
+          <Image iconType="3" name="/Assets/gradient-big.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="20" y="370" width="350" height="370"/>
+          <AbsoluteConstraints x="0" y="0" width="1440" height="850"/>
         </Constraint>
       </Constraints>
     </Component>

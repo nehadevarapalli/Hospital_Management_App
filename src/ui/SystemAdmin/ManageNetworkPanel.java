@@ -132,8 +132,8 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 410, 180, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/kisspng-healthcare-industry-health-care-business-digital-h-accessible-services-health-care-clipart-full-s-5d235f5891a896.4824455915625992565966.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, -70, 830, 850));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed

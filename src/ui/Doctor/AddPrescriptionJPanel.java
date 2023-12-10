@@ -86,7 +86,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         });
         add(btnSubmitit, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, -1, -1));
 
-        icBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
+        icBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/exit.png"))); // NOI18N
         icBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 icBackMousePressed(evt);
@@ -94,8 +94,8 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         });
         add(icBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 30, -1, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lab.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 870, 630));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmititActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmititActionPerformed

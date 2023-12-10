@@ -130,8 +130,10 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 290, 180, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/transparent-immunization-royalty-free-influenza-vaccine-health-5e955b5a988333.0913408315868465546247.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, -1, 770));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(1440, 848));
+        jLabel1.setMinimumSize(new java.awt.Dimension(1440, 848));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmbManufacturerselectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbManufacturerselectActionPerformed

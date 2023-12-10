@@ -125,8 +125,8 @@ public class OrderJPanel extends javax.swing.JPanel {
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, 220, 10));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/doc.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 330, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApprovedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApprovedActionPerformed

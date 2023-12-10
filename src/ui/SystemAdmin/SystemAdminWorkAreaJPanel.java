@@ -100,7 +100,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         onePanel.add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 50));
 
         icNetwork.setBackground(new java.awt.Color(102, 204, 255));
-        icNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network.png"))); // NOI18N
+        icNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network-small.png"))); // NOI18N
         icNetwork.setOpaque(true);
         onePanel.add(icNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
@@ -130,7 +130,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 50));
 
         icEnterprise.setBackground(new java.awt.Color(102, 204, 255));
-        icEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/enterprise.png"))); // NOI18N
+        icEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/enterprise-small.png"))); // NOI18N
         icEnterprise.setOpaque(true);
         twoPanel.add(icEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
@@ -153,10 +153,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         lblProfile.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblProfile.setText("CREATE ADMIN PROFILE");
         lblProfile.setOpaque(true);
-        threePanel.add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 180, 50));
+        threePanel.add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 180, 50));
 
         icAdmin.setBackground(new java.awt.Color(102, 204, 255));
-        icAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network.png"))); // NOI18N
+        icAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network-small.png"))); // NOI18N
         icAdmin.setOpaque(true);
         threePanel.add(icAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
@@ -179,7 +179,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         cardWorkPanel.setPreferredSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setLayout(new java.awt.CardLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         cardWorkPanel.add(jLabel1, "card3");
 

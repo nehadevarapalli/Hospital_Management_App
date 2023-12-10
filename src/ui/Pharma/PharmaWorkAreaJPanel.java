@@ -94,8 +94,8 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 630, 180));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ lablab.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 10, 980, 840));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         btnNotavailable.setText("Not Available");
         btnNotavailable.addActionListener(new java.awt.event.ActionListener() {

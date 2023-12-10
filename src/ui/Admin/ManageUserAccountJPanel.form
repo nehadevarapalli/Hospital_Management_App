@@ -310,12 +310,12 @@
     <Component class="javax.swing.JLabel" name="lblTitle">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/Screen Shot 2022-12-08 at 12.17.27 AM.png"/>
+          <Image iconType="3" name="/Assets/gradient-big.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="650" y="40" width="570" height="640"/>
+          <AbsoluteConstraints x="0" y="0" width="1190" height="850"/>
         </Constraint>
       </Constraints>
     </Component>

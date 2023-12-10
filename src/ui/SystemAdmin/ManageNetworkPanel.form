@@ -138,12 +138,12 @@
     <Component class="javax.swing.JLabel" name="lblTitle">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/kisspng-healthcare-industry-health-care-business-digital-h-accessible-services-health-care-clipart-full-s-5d235f5891a896.4824455915625992565966.png"/>
+          <Image iconType="3" name="/Assets/gradient.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="20" y="-70" width="830" height="850"/>
+          <AbsoluteConstraints x="0" y="0" width="1190" height="850"/>
         </Constraint>
       </Constraints>
     </Component>

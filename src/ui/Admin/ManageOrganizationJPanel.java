@@ -186,8 +186,8 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
         lblTitle.setBackground(new java.awt.Color(255, 255, 255));
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/orggg.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 1020, 820));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdditionActionPerformed

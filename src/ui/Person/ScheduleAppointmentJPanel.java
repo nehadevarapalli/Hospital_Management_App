@@ -120,8 +120,8 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, 280, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ea7f2dd47969349da148ea0b4ec56815.gif"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 1190, 850));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {

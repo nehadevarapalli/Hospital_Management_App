@@ -149,8 +149,8 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 640, 150));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/employee2.gif"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 900, 690));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         lblVal.setBackground(new java.awt.Color(0, 0, 0));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N

@@ -216,8 +216,8 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, 180, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/health-care-01.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 1100, 720));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmbNetworkselectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNetworkselectActionPerformed

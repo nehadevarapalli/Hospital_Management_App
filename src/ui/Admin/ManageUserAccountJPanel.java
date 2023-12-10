@@ -226,8 +226,8 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 230, 10));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Screen Shot 2022-12-08 at 12.17.27 AM.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 570, 640));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed

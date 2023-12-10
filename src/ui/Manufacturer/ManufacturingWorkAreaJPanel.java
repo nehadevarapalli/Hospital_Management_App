@@ -144,8 +144,8 @@ public class ManufacturingWorkAreaJPanel extends javax.swing.JPanel {
         lblVal.setText("<value>");
         add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 30, 230, 30));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lab1.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, -10, 580, 850));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSndSampleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSndSampleActionPerformed

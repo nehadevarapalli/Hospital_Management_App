@@ -116,8 +116,8 @@ public class AddVaccineJPanel extends javax.swing.JPanel {
         separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 220, 10));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/kisspng-health-care-medicine-physician-hospital-book-doctor-appointment-online-clinic-management-s-5bedd4fdf17f04.4623187215423132139892.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(-120, 310, 1570, 600));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {

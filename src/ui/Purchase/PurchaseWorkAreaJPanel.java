@@ -69,8 +69,8 @@ public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblVacc = new javax.swing.JTable();
         btnRequest = new javax.swing.JButton();
-        cardRequestPanel = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
+        cardRequestPanel = new javax.swing.JPanel();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
 
@@ -112,14 +112,14 @@ public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, -1, -1));
 
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 0, 1540, 850));
+
         cardRequestPanel.setBackground(new java.awt.Color(255, 255, 255));
         cardRequestPanel.setMinimumSize(new java.awt.Dimension(670, 848));
         cardRequestPanel.setPreferredSize(new java.awt.Dimension(670, 848));
         cardRequestPanel.setLayout(new java.awt.CardLayout());
-        add(cardRequestPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 10, 50, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/purchase.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, -80, 750, 850));
+        add(cardRequestPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 90, 50, -1));
 
         lblTxt.setBackground(new java.awt.Color(0, 0, 0));
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N

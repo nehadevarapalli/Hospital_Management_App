@@ -156,8 +156,8 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 350, 180, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/kisspng-nch-healthcare-system-health-care-health-system-he-5b155ceee94428.5300973115281267029555.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, -70, 830, 850));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");

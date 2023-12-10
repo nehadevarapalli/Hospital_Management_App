@@ -87,7 +87,7 @@
     <Component class="javax.swing.JLabel" name="icBack">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/back.png"/>
+          <Image iconType="3" name="/Assets/exit.png"/>
         </Property>
       </Properties>
       <Events>
@@ -102,12 +102,12 @@
     <Component class="javax.swing.JLabel" name="lblTitle">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/lab.png"/>
+          <Image iconType="3" name="/Assets/gradient-big.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="310" y="210" width="870" height="630"/>
+          <AbsoluteConstraints x="0" y="0" width="1440" height="850"/>
         </Constraint>
       </Constraints>
     </Component>

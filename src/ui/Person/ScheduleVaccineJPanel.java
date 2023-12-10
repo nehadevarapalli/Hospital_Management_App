@@ -82,8 +82,8 @@ public class ScheduleVaccineJPanel extends javax.swing.JPanel {
         cmbDistributorselect.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(cmbDistributorselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, -1, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/network.gif"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, 950, 850));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {

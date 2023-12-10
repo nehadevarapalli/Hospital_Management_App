@@ -375,8 +375,8 @@ public class LabAreaJPanel extends javax.swing.JPanel {
         add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 220, 10));
 
         lblTitle.setBackground(new java.awt.Color(0, 0, 0));
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lab2.gif"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 350, 370));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         lblQ5.setBackground(new java.awt.Color(0, 0, 0));
         lblQ5.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N

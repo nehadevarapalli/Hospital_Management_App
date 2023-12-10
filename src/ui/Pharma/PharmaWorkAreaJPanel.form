@@ -113,12 +113,12 @@
     <Component class="javax.swing.JLabel" name="lblTitle">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/ lablab.png"/>
+          <Image iconType="3" name="/Assets/gradient-big.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="720" y="10" width="980" height="840"/>
+          <AbsoluteConstraints x="0" y="0" width="1440" height="850"/>
         </Constraint>
       </Constraints>
     </Component>

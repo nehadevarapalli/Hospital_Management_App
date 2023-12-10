@@ -132,8 +132,8 @@ public class HealthWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnpieChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, -1, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/vaccine.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, 930, 710));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");

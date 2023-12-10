@@ -158,8 +158,8 @@ public class NDistirbutionWorkAreaJPanel extends javax.swing.JPanel {
         separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 220, 10));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/new customer.gif"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 840, 480));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");

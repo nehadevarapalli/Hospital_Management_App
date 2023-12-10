@@ -85,10 +85,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         lblOrg.setMinimumSize(new java.awt.Dimension(180, 20));
         lblOrg.setOpaque(true);
         lblOrg.setPreferredSize(new java.awt.Dimension(180, 20));
-        onePanel.add(lblOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 250, -1));
+        onePanel.add(lblOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 200, 50));
 
         organizationsicon.setBackground(new java.awt.Color(102, 204, 255));
-        // organizationsicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageorganization.png"))); // NOI18N
+        organizationsicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/enterprise-small.png"))); // NOI18N
         organizationsicon.setOpaque(true);
         onePanel.add(organizationsicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
@@ -114,10 +114,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         lblEmp.setMinimumSize(new java.awt.Dimension(180, 20));
         lblEmp.setOpaque(true);
         lblEmp.setPreferredSize(new java.awt.Dimension(180, 20));
-        twoPanel.add(lblEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 250, -1));
+        twoPanel.add(lblEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 200, -1));
 
         employeesicon.setBackground(new java.awt.Color(102, 204, 255));
-        // employeesicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageemployees.png"))); // NOI18N
+        employeesicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/doctor,pharmacy,lab/employees.png"))); // NOI18N
         employeesicon.setOpaque(true);
         twoPanel.add(employeesicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 40));
 
@@ -143,10 +143,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         lblUser.setMinimumSize(new java.awt.Dimension(180, 20));
         lblUser.setOpaque(true);
         lblUser.setPreferredSize(new java.awt.Dimension(180, 20));
-        threePanel.add(lblUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 260, -1));
+        threePanel.add(lblUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 200, 50));
 
         usersicon.setBackground(new java.awt.Color(102, 204, 255));
-        // usersicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageuser.png"))); // NOI18N
+        usersicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/doctor,pharmacy,lab/users.png"))); // NOI18N
         usersicon.setToolTipText("");
         usersicon.setOpaque(true);
         threePanel.add(usersicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -159,25 +159,33 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         menuPanel.setLayout(menuPanelLayout);
         menuPanelLayout.setHorizontalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(onePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(twoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(threePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(menuPanelLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
                 .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTxt)
-                    .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(menuPanelLayout.createSequentialGroup()
+                            .addGap(20, 20, 20)
+                            .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblTxt)
+                                .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(onePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(menuPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(twoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(menuPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(threePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         menuPanelLayout.setVerticalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuPanelLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
-                .addComponent(onePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addComponent(onePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(twoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(threePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(180, 180, 180)
+                .addGap(18, 18, 18)
+                .addComponent(threePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(151, 151, 151)
                 .addComponent(lblTxt)
                 .addGap(0, 0, 0)
                 .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -189,7 +197,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         cardWorkPanel.setPreferredSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setLayout(new java.awt.CardLayout());
 
-        // jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/doctor.jpeg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jLabel2.setPreferredSize(new java.awt.Dimension(640, 640));
         jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -200,8 +208,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cardWorkPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
