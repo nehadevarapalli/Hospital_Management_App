@@ -15,7 +15,7 @@ import ui.PersonRole.PersonWorkAreaJPanel;
 
 /**
  *
- * @author aakashrajawat
+ * @author ashishnevan
  */
 public class PersonRole extends Role{
 

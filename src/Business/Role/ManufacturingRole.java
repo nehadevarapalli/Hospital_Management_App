@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author aakashrajawat
+ * @author ashishnevan
  */
 public class ManufacturingRole extends Role{
     

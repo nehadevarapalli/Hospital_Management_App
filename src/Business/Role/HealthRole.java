@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author aakashrajawat
+ * @author ashishnevan
  */
 public class HealthRole extends Role{
     
