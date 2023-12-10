@@ -51,7 +51,6 @@ public class MainJFrame extends javax.swing.JFrame {
         separatorLine2 = new javax.swing.JSeparator();
         txtPassword = new javax.swing.JPasswordField();
         txtUsername = new javax.swing.JTextField();
-        chkTerms = new javax.swing.JCheckBox();
         btnsignin = new javax.swing.JButton();
         separatorLine4 = new javax.swing.JSeparator();
         exiticon = new javax.swing.JLabel();
@@ -74,19 +73,19 @@ public class MainJFrame extends javax.swing.JFrame {
         signinFormPanel.setBackground(new java.awt.Color(0, 0, 51));
         signinFormPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblSignin.setFont(new java.awt.Font("Optima", 1, 23)); // NOI18N
+        lblSignin.setFont(new java.awt.Font("Helvetica Neue", 1, 23)); // NOI18N
         lblSignin.setForeground(new java.awt.Color(255, 255, 255));
         lblSignin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblSignin.setText("Welcome To Vaccine Portal");
+        lblSignin.setText("Global Immunization Portal");
         signinFormPanel.add(lblSignin, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 380, 50));
 
-        lblUsername.setFont(new java.awt.Font("Optima", 3, 16)); // NOI18N
+        lblUsername.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblUsername.setForeground(new java.awt.Color(255, 255, 255));
         lblUsername.setText("USERNAME");
         signinFormPanel.add(lblUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, -1, -1));
 
         lblPassword.setBackground(new java.awt.Color(255, 255, 255));
-        lblPassword.setFont(new java.awt.Font("Optima", 3, 16)); // NOI18N
+        lblPassword.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setText("PASSWORD");
         signinFormPanel.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
@@ -95,7 +94,7 @@ public class MainJFrame extends javax.swing.JFrame {
         signinFormPanel.add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, 300, 20));
 
         txtPassword.setBackground(new java.awt.Color(0, 0, 51));
-        txtPassword.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtPassword.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtPassword.setForeground(new java.awt.Color(153, 153, 153));
         txtPassword.setText("password");
         txtPassword.setBorder(null);
@@ -112,7 +111,7 @@ public class MainJFrame extends javax.swing.JFrame {
         signinFormPanel.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, 300, 30));
 
         txtUsername.setBackground(new java.awt.Color(0, 0, 51));
-        txtUsername.setFont(new java.awt.Font("Optima", 0, 14)); // NOI18N
+        txtUsername.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         txtUsername.setForeground(new java.awt.Color(153, 153, 153));
         txtUsername.setText("Enter Username");
         txtUsername.setBorder(null);
@@ -123,16 +122,15 @@ public class MainJFrame extends javax.swing.JFrame {
                 txtUsernameMouseClicked(evt);
             }
         });
+        txtUsername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsernameActionPerformed(evt);
+            }
+        });
         signinFormPanel.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 300, 30));
 
-        chkTerms.setBackground(new java.awt.Color(36, 47, 65));
-        chkTerms.setFont(new java.awt.Font("Optima", 0, 13)); // NOI18N
-        chkTerms.setForeground(new java.awt.Color(255, 255, 255));
-        chkTerms.setText("I agree to all terms of service");
-        signinFormPanel.add(chkTerms, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, -1, -1));
-
         btnsignin.setBackground(new java.awt.Color(204, 204, 204));
-        btnsignin.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        btnsignin.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         btnsignin.setText("Sign In");
         btnsignin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -147,7 +145,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnsigninActionPerformed(evt);
             }
         });
-        signinFormPanel.add(btnsignin, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 480, 170, 40));
+        signinFormPanel.add(btnsignin, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, 170, 40));
 
         separatorLine4.setForeground(new java.awt.Color(255, 255, 255));
         signinFormPanel.add(separatorLine4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 300, 10));
@@ -318,6 +316,10 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPasswordActionPerformed
 
+    private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsernameActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -371,7 +373,6 @@ public class MainJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnsignin;
     private javax.swing.JPanel cardPanel;
-    private javax.swing.JCheckBox chkTerms;
     private javax.swing.JLabel exiticon;
     private javax.swing.JLabel iconlogout;
     private javax.swing.JLabel jLabel3;
