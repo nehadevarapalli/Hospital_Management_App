@@ -20,3 +20,4 @@ public class DistributionRole extends Role {
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
         return new NDistirbutionWorkAreaJPanel(userProcessContainer, account, (DistributionOrganization) organization, enterprise, business);
     }
+}
