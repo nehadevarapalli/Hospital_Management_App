@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ruchachotalia
+ * @author nehadevarapalli
  */
 public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
         

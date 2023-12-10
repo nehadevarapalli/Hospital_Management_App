@@ -23,7 +23,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author aakashrajawat
+ * @author nehadevarapalli
  */
 public class HealthWorkAreaJPanel extends javax.swing.JPanel {
         

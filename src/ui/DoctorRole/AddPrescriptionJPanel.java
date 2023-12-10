@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author diyabaldota
+ * @author ashishnevan
  */
 public class AddPrescriptionJPanel extends javax.swing.JPanel {
 

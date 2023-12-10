@@ -29,7 +29,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author diyabaldota
+ * @author nehadevarapalli
  */
 public class LabAreaJPanel extends javax.swing.JPanel {
     

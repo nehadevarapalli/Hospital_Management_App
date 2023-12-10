@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author diyabaldota
+ * @author nehadevarapalli
  */
 public class RequestVaccineJPanel extends javax.swing.JPanel {
 

@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author diyabaldota
+ * @author nehadevarapalli
  */
 public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
 

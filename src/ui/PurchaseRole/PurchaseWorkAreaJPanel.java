@@ -28,7 +28,7 @@ import ui.ManufacturingRole.AddVaccineJPanel;
 
 /**
  *
- * @author diyabaldota
+ * @author nehadevarapalli
  */
 public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
         

@@ -23,7 +23,7 @@ import ui.ManufacturingRole.AddVaccineJPanel;
 
 /**
  *
- * @author aakashrajawat
+ * @author nehadevarapalli
  */
 public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
 

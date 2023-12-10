@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author aakashrajawat
+ * @author nehadevarapalli
  */
 public class PersonWorkAreaJPanel extends javax.swing.JPanel {
 
