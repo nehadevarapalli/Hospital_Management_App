@@ -7,6 +7,6 @@
  *
  * @author arnav
  */
-public class EconomyOrganization {
+public class HealthOrganization {
     
 }
