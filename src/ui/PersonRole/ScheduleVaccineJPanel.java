@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author aakashrajawat
+ * @author ashishnevan
  */
 public class ScheduleVaccineJPanel extends javax.swing.JPanel {
 

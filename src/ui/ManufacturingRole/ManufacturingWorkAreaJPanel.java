@@ -31,7 +31,7 @@ import ui.AdministrativeRole.ManageOrganizationJPanel;
 
 /**
  *
- * @author ruchachotalia
+ * @author arnav
  */
 public class ManufacturingWorkAreaJPanel extends javax.swing.JPanel {
         

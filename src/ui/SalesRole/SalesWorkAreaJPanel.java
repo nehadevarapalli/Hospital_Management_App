@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ruchachotalia
+ * @author nehadevarapalli
  */
 public class SalesWorkAreaJPanel extends javax.swing.JPanel {
         
