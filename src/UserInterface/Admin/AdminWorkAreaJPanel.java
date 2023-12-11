@@ -49,11 +49,11 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         cardWorkPanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 204, 255));
+        setBackground(new java.awt.Color(0, 0, 51));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
 
-        menuPanel.setBackground(new java.awt.Color(102, 204, 255));
+        menuPanel.setBackground(new java.awt.Color(0, 0, 51));
         menuPanel.setForeground(new java.awt.Color(255, 255, 255));
         menuPanel.setMaximumSize(new java.awt.Dimension(250, 848));
         menuPanel.setMinimumSize(new java.awt.Dimension(250, 848));
@@ -75,7 +75,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         onePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblOrg.setBackground(new java.awt.Color(102, 204, 255));
+        lblOrg.setBackground(new java.awt.Color(0, 0, 51));
         lblOrg.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblOrg.setForeground(new java.awt.Color(255, 255, 255));
         lblOrg.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -87,8 +87,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         lblOrg.setPreferredSize(new java.awt.Dimension(180, 20));
         onePanel.add(lblOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 200, 50));
 
-        organizationsicon.setBackground(new java.awt.Color(102, 204, 255));
-        organizationsicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/enterprise-small.png"))); // NOI18N
+        organizationsicon.setBackground(new java.awt.Color(0, 0, 51));
+        organizationsicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/organisation.png"))); // NOI18N
         organizationsicon.setOpaque(true);
         onePanel.add(organizationsicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
@@ -105,7 +105,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         twoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblEmp.setBackground(new java.awt.Color(102, 204, 255));
+        lblEmp.setBackground(new java.awt.Color(0, 0, 51));
         lblEmp.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblEmp.setForeground(new java.awt.Color(255, 255, 255));
         lblEmp.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -134,7 +134,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         threePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblUser.setBackground(new java.awt.Color(102, 204, 255));
+        lblUser.setBackground(new java.awt.Color(0, 0, 51));
         lblUser.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblUser.setForeground(new java.awt.Color(255, 255, 255));
         lblUser.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -146,7 +146,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         threePanel.add(lblUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 200, 50));
 
         usersicon.setBackground(new java.awt.Color(102, 204, 255));
-        usersicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/doctor,pharmacy,lab/users.png"))); // NOI18N
+        usersicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/admin.png"))); // NOI18N
         usersicon.setToolTipText("");
         usersicon.setOpaque(true);
         threePanel.add(usersicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -161,20 +161,18 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuPanelLayout.createSequentialGroup()
                 .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(menuPanelLayout.createSequentialGroup()
-                            .addGap(20, 20, 20)
-                            .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblTxt)
-                                .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addComponent(onePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(menuPanelLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(twoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(menuPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(threePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                        .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(menuPanelLayout.createSequentialGroup()
+                                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblTxt)
+                                    .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(twoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(threePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(onePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         menuPanelLayout.setVerticalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,10 +183,11 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(twoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(threePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(151, 151, 151)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblTxt)
                 .addGap(0, 0, 0)
-                .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(lblVal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         cardWorkPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -213,9 +212,11 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(cardWorkPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cardWorkPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(cardWorkPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(menuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

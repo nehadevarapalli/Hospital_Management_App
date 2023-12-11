@@ -42,8 +42,8 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         background = new javax.swing.JPanel();
         menuPanel = new javax.swing.JPanel();
         onePanel = new javax.swing.JPanel();
-        lblNetwork = new javax.swing.JLabel();
-        icNetwork = new javax.swing.JLabel();
+        lblRegion = new javax.swing.JLabel();
+        icRegion = new javax.swing.JLabel();
         twoPanel = new javax.swing.JPanel();
         lblEnterprise = new javax.swing.JLabel();
         icEnterprise = new javax.swing.JLabel();
@@ -69,7 +69,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         background.setPreferredSize(new java.awt.Dimension(1440, 848));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        menuPanel.setBackground(new java.awt.Color(102, 204, 255));
+        menuPanel.setBackground(new java.awt.Color(0, 0, 51));
         menuPanel.setForeground(new java.awt.Color(255, 255, 255));
         menuPanel.setMaximumSize(new java.awt.Dimension(250, 848));
         menuPanel.setMinimumSize(new java.awt.Dimension(250, 848));
@@ -88,21 +88,21 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         onePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblNetwork.setBackground(new java.awt.Color(102, 204, 255));
-        lblNetwork.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
-        lblNetwork.setForeground(new java.awt.Color(255, 255, 255));
-        lblNetwork.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblNetwork.setText("CREATE NETWORK ");
-        lblNetwork.setMaximumSize(new java.awt.Dimension(180, 20));
-        lblNetwork.setMinimumSize(new java.awt.Dimension(180, 20));
-        lblNetwork.setOpaque(true);
-        lblNetwork.setPreferredSize(new java.awt.Dimension(180, 20));
-        onePanel.add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 50));
+        lblRegion.setBackground(new java.awt.Color(0, 0, 51));
+        lblRegion.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        lblRegion.setForeground(new java.awt.Color(255, 255, 255));
+        lblRegion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblRegion.setText("Create Region");
+        lblRegion.setMaximumSize(new java.awt.Dimension(180, 20));
+        lblRegion.setMinimumSize(new java.awt.Dimension(180, 20));
+        lblRegion.setOpaque(true);
+        lblRegion.setPreferredSize(new java.awt.Dimension(180, 20));
+        onePanel.add(lblRegion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 170, 50));
 
-        icNetwork.setBackground(new java.awt.Color(102, 204, 255));
-        icNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network-small.png"))); // NOI18N
-        icNetwork.setOpaque(true);
-        onePanel.add(icNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        icRegion.setBackground(new java.awt.Color(102, 204, 255));
+        icRegion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/region.png"))); // NOI18N
+        icRegion.setOpaque(true);
+        onePanel.add(icRegion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
         menuPanel.add(onePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, 50));
 
@@ -118,21 +118,21 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         twoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblEnterprise.setBackground(new java.awt.Color(102, 204, 255));
-        lblEnterprise.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblEnterprise.setBackground(new java.awt.Color(0, 0, 51));
+        lblEnterprise.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblEnterprise.setForeground(new java.awt.Color(255, 255, 255));
         lblEnterprise.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEnterprise.setText("CREATE ENTERPRISE");
+        lblEnterprise.setText("Create Enterprise");
         lblEnterprise.setMaximumSize(new java.awt.Dimension(180, 20));
         lblEnterprise.setMinimumSize(new java.awt.Dimension(180, 20));
         lblEnterprise.setOpaque(true);
         lblEnterprise.setPreferredSize(new java.awt.Dimension(180, 20));
-        twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 50));
+        twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 170, 50));
 
         icEnterprise.setBackground(new java.awt.Color(102, 204, 255));
-        icEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/enterprise-small.png"))); // NOI18N
+        icEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/organisation.png"))); // NOI18N
         icEnterprise.setOpaque(true);
-        twoPanel.add(icEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        twoPanel.add(icEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 50, -1));
 
         menuPanel.add(twoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, -1, 50));
 
@@ -147,29 +147,29 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         threePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblProfile.setBackground(new java.awt.Color(102, 204, 255));
-        lblProfile.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblProfile.setBackground(new java.awt.Color(0, 0, 51));
+        lblProfile.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblProfile.setForeground(new java.awt.Color(255, 255, 255));
         lblProfile.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblProfile.setText("CREATE ADMIN PROFILE");
+        lblProfile.setText("Create Admin");
         lblProfile.setOpaque(true);
         threePanel.add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 180, 50));
 
         icAdmin.setBackground(new java.awt.Color(102, 204, 255));
-        icAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/network-small.png"))); // NOI18N
+        icAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/sysadmin/admin.png"))); // NOI18N
         icAdmin.setOpaque(true);
-        threePanel.add(icAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        threePanel.add(icAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 50, -1));
 
         menuPanel.add(threePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, -1, 50));
 
-        lblVal.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
+        lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        menuPanel.add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 230, 30));
+        menuPanel.add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 810, 230, 30));
 
-        lblTxt.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setForeground(new java.awt.Color(255, 255, 255));
         lblTxt.setText("Currently Logged in as:");
-        menuPanel.add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
+        menuPanel.add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 780, -1, -1));
 
         background.add(menuPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -224,12 +224,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel cardWorkPanel;
     private javax.swing.JLabel icAdmin;
     private javax.swing.JLabel icEnterprise;
-    private javax.swing.JLabel icNetwork;
+    private javax.swing.JLabel icRegion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblEnterprise;
-    private javax.swing.JLabel lblNetwork;
     private javax.swing.JLabel lblProfile;
+    private javax.swing.JLabel lblRegion;
     private javax.swing.JLabel lblTxt;
     private javax.swing.JLabel lblVal;
     private javax.swing.JPanel menuPanel;
