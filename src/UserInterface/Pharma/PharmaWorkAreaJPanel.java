@@ -109,6 +109,7 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
 
         lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
+        lblVal.setForeground(new java.awt.Color(255, 255, 255));
         lblVal.setText("<value>");
         add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 60, 230, 30));
 

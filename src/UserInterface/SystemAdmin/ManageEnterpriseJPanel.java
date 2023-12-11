@@ -84,6 +84,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         lblEnterpriseselect = new javax.swing.JLabel();
         cmbEnterpriseselect = new javax.swing.JComboBox();
         btnSub = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -158,6 +159,11 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         });
         add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 670, -1, -1));
 
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Enterprises");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
     }// </editor-fold>//GEN-END:initComponents
@@ -217,6 +223,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnSub;
     private javax.swing.JComboBox cmbEnterpriseselect;
     private javax.swing.JComboBox cmbNetworkselect;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblEnterpriseselect;

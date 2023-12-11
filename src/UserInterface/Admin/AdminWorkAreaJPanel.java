@@ -59,7 +59,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         menuPanel.setMinimumSize(new java.awt.Dimension(250, 848));
         menuPanel.setPreferredSize(new java.awt.Dimension(250, 848));
 
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
+        lblVal.setForeground(new java.awt.Color(255, 255, 255));
         lblVal.setText("<value>");
 
         onePanel.setBackground(new java.awt.Color(102, 204, 255));
