@@ -58,6 +58,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         txtMedList = new javax.swing.JTextArea();
         btnSubmitit = new javax.swing.JButton();
         icBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -67,7 +68,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
 
         lblMedicalList.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblMedicalList.setText("Medicine List:");
-        add(lblMedicalList, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, -1, -1));
+        add(lblMedicalList, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 370, -1, -1));
 
         txtMedList.setColumns(20);
         txtMedList.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -75,7 +76,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         txtMedList.setBorder(null);
         jScrollPane1.setViewportView(txtMedList);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 370, 370, 260));
 
         btnSubmitit.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnSubmitit.setText("Submit");
@@ -84,7 +85,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
                 btnSubmititActionPerformed(evt);
             }
         });
-        add(btnSubmitit, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, -1, -1));
+        add(btnSubmitit, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 660, -1, -1));
 
         icBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/exit.png"))); // NOI18N
         icBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -93,6 +94,11 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
             }
         });
         add(icBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 30, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Create Prescription");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
@@ -161,6 +167,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmitit;
     private javax.swing.JLabel icBack;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblMedicalList;
     private javax.swing.JLabel lblTitle;

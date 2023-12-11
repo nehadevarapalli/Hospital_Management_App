@@ -72,9 +72,10 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
         separatorLine1 = new javax.swing.JSeparator();
         separatorLine2 = new javax.swing.JSeparator();
         separatorLine3 = new javax.swing.JSeparator();
-        lblTitle = new javax.swing.JLabel();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -88,7 +89,7 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
                 btnApprovedActionPerformed(evt);
             }
         });
-        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, -1, -1));
+        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 690, -1, -1));
 
         btnRejected.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnRejected.setText("Reject Vaccine");
@@ -97,7 +98,7 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
                 btnRejectedActionPerformed(evt);
             }
         });
-        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, -1, -1));
+        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 690, -1, -1));
 
         tblWorkReq.setForeground(new java.awt.Color(36, 47, 65));
         tblWorkReq.setModel(new javax.swing.table.DefaultTableModel(
@@ -117,20 +118,20 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblWorkReq);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 520, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 520, 180));
 
         lblQuty.setBackground(new java.awt.Color(0, 0, 0));
         lblQuty.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQuty.setText("Quantity per dose(in mg):");
-        add(lblQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+        add(lblQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, -1, -1));
 
         lblDose.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblDose.setText("Number of doses:");
-        add(lblDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, -1, -1));
+        add(lblDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 550, -1, -1));
 
         lblgap.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblgap.setText("Gap between dose(in days):");
-        add(lblgap, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, -1, -1));
+        add(lblgap, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, -1, -1));
 
         txtQuty.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtQuty.setForeground(new java.awt.Color(255, 255, 255));
@@ -140,12 +141,12 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
                 txtQutyActionPerformed(evt);
             }
         });
-        add(txtQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 210, -1));
+        add(txtQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 500, 210, -1));
 
         txtDosage.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtDosage.setForeground(new java.awt.Color(255, 255, 255));
         txtDosage.setBorder(null);
-        add(txtDosage, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 220, 20));
+        add(txtDosage, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 550, 220, 20));
 
         txtgap.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtgap.setForeground(new java.awt.Color(255, 255, 255));
@@ -155,16 +156,16 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
                 txtgapActionPerformed(evt);
             }
         });
-        add(txtgap, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 230, -1));
+        add(txtgap, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 590, 230, -1));
 
         lblPricing.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblPricing.setText("Price (in USD):");
-        add(lblPricing, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 440, -1, -1));
+        add(lblPricing, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 630, -1, -1));
 
         txtPricing.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtPricing.setForeground(new java.awt.Color(255, 255, 255));
         txtPricing.setBorder(null);
-        add(txtPricing, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 200, -1));
+        add(txtPricing, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 630, 200, -1));
 
         separatorLine.setForeground(new java.awt.Color(0, 0, 0));
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
@@ -186,16 +187,22 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
         separatorLine3.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 180, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
-
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");
-        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, 30));
+        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, -1, 30));
 
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 230, 30));
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 20, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Vaccines");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 140, 1190, -1));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     public void populateTable(){
@@ -291,6 +298,7 @@ public class EconomyWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApproved;
     private javax.swing.JButton btnRejected;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblDose;
     private javax.swing.JLabel lblPricing;

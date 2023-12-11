@@ -66,9 +66,10 @@ public class HealthWorkAreaJPanel extends javax.swing.JPanel {
         lblApproved = new javax.swing.JLabel();
         lblRequested = new javax.swing.JLabel();
         btnpieChart = new javax.swing.JButton();
-        lblTitle = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -93,7 +94,7 @@ public class HealthWorkAreaJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblRequested);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 370, 470, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, 470, 180));
 
         tblApproved.setForeground(new java.awt.Color(36, 47, 65));
         tblApproved.setModel(new javax.swing.table.DefaultTableModel(
@@ -113,15 +114,15 @@ public class HealthWorkAreaJPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tblApproved);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 470, 180));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 470, 180));
 
         lblApproved.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblApproved.setText("Approved List of Vaccine by person");
-        add(lblApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
+        add(lblApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
 
         lblRequested.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblRequested.setText("Requested List of Vaccines by person");
-        add(lblRequested, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, -1, -1));
+        add(lblRequested, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, -1, -1));
 
         btnpieChart.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnpieChart.setText("Generate PieChart");
@@ -130,18 +131,24 @@ public class HealthWorkAreaJPanel extends javax.swing.JPanel {
                 btnpieChartActionPerformed(evt);
             }
         });
-        add(btnpieChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, -1, -1));
+        add(btnpieChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 720, -1, -1));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Vaccines");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 140, 1190, -1));
 
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");
-        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
+        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 30, -1, 30));
 
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 30, 230, 30));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnpieChartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpieChartActionPerformed
@@ -160,6 +167,7 @@ public class HealthWorkAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnpieChart;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblApproved;

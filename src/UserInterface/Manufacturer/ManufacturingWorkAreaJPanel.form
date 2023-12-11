@@ -59,7 +59,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="170" y="150" width="690" height="180"/>
+          <AbsoluteConstraints x="130" y="150" width="870" height="180"/>
         </Constraint>
       </Constraints>
 
@@ -72,11 +72,11 @@
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="6" rowCount="8">
-                <Column editable="true" title="Vaccine Name" type="java.lang.Object"/>
+                <Column editable="false" title="Vaccine Name" type="java.lang.Object"/>
                 <Column editable="true" title="Scientific Name" type="java.lang.Object"/>
-                <Column editable="true" title="Manufacturer Name" type="java.lang.Object"/>
-                <Column editable="true" title="Quantity per dose" type="java.lang.Object"/>
-                <Column editable="true" title="Number of Doses" type="java.lang.Object"/>
+                <Column editable="false" title="Manufacturer" type="java.lang.Object"/>
+                <Column editable="false" title="Quantity per dose" type="java.lang.Object"/>
+                <Column editable="false" title="Number of Doses" type="java.lang.Object"/>
                 <Column editable="true" title="Status" type="java.lang.Object"/>
               </Table>
             </Property>
@@ -171,14 +171,14 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="420" y="30" width="-1" height="30"/>
+          <AbsoluteConstraints x="810" y="40" width="-1" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="lblVal">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="0" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Helvetica Neue" size="22" style="1"/>
@@ -187,7 +187,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="590" y="30" width="230" height="30"/>
+          <AbsoluteConstraints x="980" y="40" width="230" height="30"/>
         </Constraint>
       </Constraints>
     </Component>

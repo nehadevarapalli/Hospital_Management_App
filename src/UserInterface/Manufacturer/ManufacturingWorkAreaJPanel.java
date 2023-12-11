@@ -105,12 +105,20 @@ public class ManufacturingWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Vaccine Name", "Scientific Name", "Manufacturer Name", "Quantity per dose", "Number of Doses", "Status"
+                "Vaccine Name", "Scientific Name", "Manufacturer", "Quantity per dose", "Number of Doses", "Status"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, false, false, false, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(tblReq);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 690, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 870, 180));
 
         btnAddVacc.setBackground(new java.awt.Color(255, 255, 255));
         btnAddVacc.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -135,12 +143,12 @@ public class ManufacturingWorkAreaJPanel extends javax.swing.JPanel {
         lblText.setBackground(new java.awt.Color(0, 0, 0));
         lblText.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblText.setText("Currently Logged in as:");
-        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, 30));
+        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, -1, 30));
 
-        lblVal.setBackground(new java.awt.Color(0, 0, 0));
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 30, 230, 30));
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 40, 230, 30));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));

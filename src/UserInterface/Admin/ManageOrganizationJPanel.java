@@ -116,6 +116,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         btnAddition = new javax.swing.JButton();
         cmbOrg = new javax.swing.JComboBox();
         lblOrganization = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -160,7 +161,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             tblOrg.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 480, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 480, 180));
 
         btnAddition.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnAddition.setText("Add Organization");
@@ -169,7 +170,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 btnAdditionActionPerformed(evt);
             }
         });
-        add(btnAddition, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
+        add(btnAddition, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 650, -1, -1));
 
         cmbOrg.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbOrg.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -178,11 +179,16 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 cmbOrgActionPerformed(evt);
             }
         });
-        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 240, -1));
+        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 580, 240, -1));
 
         lblOrganization.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblOrganization.setText("Organization Type:");
-        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
+        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 580, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Organization");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 140, 1190, -1));
 
         lblTitle.setBackground(new java.awt.Color(255, 255, 255));
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
@@ -209,6 +215,7 @@ Type type = (Type) cmbOrg.getSelectedItem();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddition;
     private javax.swing.JComboBox cmbOrg;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblOrganization;
     private javax.swing.JLabel lblTitle;

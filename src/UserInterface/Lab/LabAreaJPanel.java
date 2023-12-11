@@ -97,10 +97,6 @@ public class LabAreaJPanel extends javax.swing.JPanel {
         txtreport = new javax.swing.JTextArea();
         lblRep = new javax.swing.JLabel();
         btnsendReport = new javax.swing.JButton();
-        separatorLine = new javax.swing.JSeparator();
-        separatorLine1 = new javax.swing.JSeparator();
-        separatorLine2 = new javax.swing.JSeparator();
-        lblTitle = new javax.swing.JLabel();
         lblQ5 = new javax.swing.JLabel();
         lblQ6 = new javax.swing.JLabel();
         pulseYesRadiobtn = new javax.swing.JRadioButton();
@@ -111,7 +107,9 @@ public class LabAreaJPanel extends javax.swing.JPanel {
         lblPulserec = new javax.swing.JLabel();
         progbarPulse = new javax.swing.JProgressBar();
         barBP = new javax.swing.JProgressBar();
-        bgpic = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
+        lblTo1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -133,7 +131,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
         tab1.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tab1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, 480, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 480, 100));
 
         btnSub.setBackground(new java.awt.Color(255, 255, 255));
         btnSub.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -143,7 +141,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 btnSubActionPerformed(evt);
             }
         });
-        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 460, -1, -1));
+        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 790, -1, -1));
 
         txtSubResult.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtSubResult.setBorder(null);
@@ -152,27 +150,27 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 txtSubResultActionPerformed(evt);
             }
         });
-        add(txtSubResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 460, 220, -1));
+        add(txtSubResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 660, 290, -1));
 
         lblQ1.setBackground(new java.awt.Color(0, 0, 0));
         lblQ1.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQ1.setText("Are the Vital Signs of the person completely normal? ");
-        add(lblQ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        add(lblQ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, -1, -1));
 
         lblQ2.setBackground(new java.awt.Color(0, 0, 0));
         lblQ2.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQ2.setText("Has the patient completed both the doses?");
-        add(lblQ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 360, -1));
+        add(lblQ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 360, -1));
 
         lblQ3.setBackground(new java.awt.Color(0, 0, 0));
         lblQ3.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQ3.setText("Does the patient have cold, cough?");
-        add(lblQ3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 360, -1));
+        add(lblQ3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, 360, -1));
 
         lblQ4.setBackground(new java.awt.Color(0, 0, 0));
         lblQ4.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQ4.setText("Does the patient have a normal temperature? ");
-        add(lblQ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 360, -1));
+        add(lblQ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 360, -1));
 
         vitalYesRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         vitalYesRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -182,7 +180,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 vitalYesRadiobtnActionPerformed(evt);
             }
         });
-        add(vitalYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, -1, -1));
+        add(vitalYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 320, -1, -1));
 
         vitalNoRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         vitalNoRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -192,7 +190,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 vitalNoRadiobtnActionPerformed(evt);
             }
         });
-        add(vitalNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, -1, -1));
+        add(vitalNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, -1, -1));
 
         dosageYesRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         dosageYesRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -202,7 +200,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 dosageYesRadiobtnActionPerformed(evt);
             }
         });
-        add(dosageYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, -1, -1));
+        add(dosageYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, -1, -1));
 
         coldYesRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         coldYesRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -212,7 +210,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 coldYesRadiobtnActionPerformed(evt);
             }
         });
-        add(coldYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, -1, -1));
+        add(coldYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
 
         tempYesRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         tempYesRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -222,7 +220,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 tempYesRadiobtnActionPerformed(evt);
             }
         });
-        add(tempYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, -1, -1));
+        add(tempYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 410, -1, -1));
 
         dosageNoRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         dosageNoRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -232,7 +230,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 dosageNoRadiobtnActionPerformed(evt);
             }
         });
-        add(dosageNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, -1, -1));
+        add(dosageNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 350, -1, -1));
 
         coldNoRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         coldNoRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -242,7 +240,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 coldNoRadiobtnActionPerformed(evt);
             }
         });
-        add(coldNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 230, -1, -1));
+        add(coldNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, -1, -1));
 
         tempNoRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         tempNoRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -252,66 +250,66 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 tempNoRadiobtnActionPerformed(evt);
             }
         });
-        add(tempNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 260, -1, -1));
+        add(tempNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 410, -1, -1));
 
         lblVital.setBackground(new java.awt.Color(0, 0, 0));
         lblVital.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblVital.setText("Vital Signs: ");
-        add(lblVital, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, -1, -1));
+        add(lblVital, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 320, -1, -1));
 
         lblDose.setBackground(new java.awt.Color(0, 0, 0));
         lblDose.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblDose.setText("Dosage: ");
-        add(lblDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 200, -1, -1));
+        add(lblDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 350, -1, -1));
 
         lblcold.setBackground(new java.awt.Color(0, 0, 0));
         lblcold.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblcold.setText("Cold/cough: ");
-        add(lblcold, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 230, -1, -1));
+        add(lblcold, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 380, -1, -1));
 
         lblTemp.setBackground(new java.awt.Color(0, 0, 0));
         lblTemp.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTemp.setText("Temperature: ");
-        add(lblTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 260, -1, -1));
+        add(lblTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 410, -1, -1));
 
         barVitalsign.setBackground(new java.awt.Color(0, 0, 0));
         barVitalsign.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         barVitalsign.setBorder(null);
-        add(barVitalsign, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 170, -1, 20));
+        add(barVitalsign, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 320, -1, 20));
 
         barDosage.setBackground(new java.awt.Color(0, 0, 0));
         barDosage.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         barDosage.setBorder(null);
-        add(barDosage, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 200, -1, -1));
+        add(barDosage, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 350, -1, 20));
 
         progbarCold.setBackground(new java.awt.Color(0, 0, 0));
         progbarCold.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         progbarCold.setBorder(null);
-        add(progbarCold, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 230, -1, -1));
+        add(progbarCold, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 380, -1, 20));
 
         barTemp.setBackground(new java.awt.Color(0, 0, 0));
         barTemp.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         barTemp.setBorder(null);
-        add(barTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 260, -1, -1));
+        add(barTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 410, -1, 20));
 
         lblFinall.setBackground(new java.awt.Color(0, 0, 0));
         lblFinall.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         lblFinall.setText("Final Report : ");
-        add(lblFinall, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 430, -1, -1));
+        add(lblFinall, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, -1, -1));
 
         barFinal.setBackground(new java.awt.Color(0, 0, 0));
         barFinal.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         barFinal.setBorder(null);
-        add(barFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 430, 308, -1));
+        add(barFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 600, 308, 20));
 
         lblresult.setBackground(new java.awt.Color(0, 0, 0));
         lblresult.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblresult.setText("Result : ");
-        add(lblresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 420, -1, 20));
+        add(lblresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 660, -1, 20));
 
         txtResult.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtResult.setBorder(null);
-        add(txtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 410, 296, 20));
+        add(txtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 660, 296, 20));
 
         btnGenReport.setBackground(new java.awt.Color(255, 255, 255));
         btnGenReport.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -321,11 +319,11 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 btnGenReportActionPerformed(evt);
             }
         });
-        add(btnGenReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 360, -1, -1));
+        add(btnGenReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, -1, -1));
 
         lblTo.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTo.setText("To: ");
-        add(lblTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, -1, -1));
+        add(lblTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 700, -1, -1));
 
         txtTo.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtTo.setBorder(null);
@@ -334,7 +332,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 txtToActionPerformed(evt);
             }
         });
-        add(txtTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 290, -1));
+        add(txtTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 700, 290, -1));
 
         txtreport.setColumns(20);
         txtreport.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -342,11 +340,11 @@ public class LabAreaJPanel extends javax.swing.JPanel {
         txtreport.setBorder(null);
         jScrollPane2.setViewportView(txtreport);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 540, 280, 130));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 590, 280, 130));
 
         lblRep.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblRep.setText("Comments about report:");
-        add(lblRep, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 550, -1, -1));
+        add(lblRep, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, -1, -1));
 
         btnsendReport.setBackground(new java.awt.Color(255, 255, 255));
         btnsendReport.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -356,37 +354,17 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 btnsendReportActionPerformed(evt);
             }
         });
-        add(btnsendReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 700, -1, -1));
-
-        separatorLine.setBackground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, 220, -1));
-
-        separatorLine1.setBackground(new java.awt.Color(0, 0, 0));
-        separatorLine1.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 430, 220, 10));
-
-        separatorLine2.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 220, 10));
-
-        lblTitle.setBackground(new java.awt.Color(0, 0, 0));
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
+        add(btnsendReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 730, -1, -1));
 
         lblQ5.setBackground(new java.awt.Color(0, 0, 0));
         lblQ5.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQ5.setText("Does the patient have a heartbeat/pulse?");
-        add(lblQ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 360, -1));
+        add(lblQ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 360, -1));
 
         lblQ6.setBackground(new java.awt.Color(0, 0, 0));
         lblQ6.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQ6.setText("Does the patient have a normal blood pressure?");
-        add(lblQ6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 360, -1));
+        add(lblQ6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 360, -1));
 
         pulseYesRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         pulseYesRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -396,7 +374,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 pulseYesRadiobtnActionPerformed(evt);
             }
         });
-        add(pulseYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, -1, -1));
+        add(pulseYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 440, -1, -1));
 
         pulseNoRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         pulseNoRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -406,7 +384,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 pulseNoRadiobtnActionPerformed(evt);
             }
         });
-        add(pulseNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 290, -1, -1));
+        add(pulseNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 440, -1, -1));
 
         bpYesRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         bpYesRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -416,7 +394,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 bpYesRadiobtnActionPerformed(evt);
             }
         });
-        add(bpYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 320, -1, -1));
+        add(bpYesRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 470, -1, -1));
 
         bpNoRadiobtn.setBackground(new java.awt.Color(0, 0, 0));
         bpNoRadiobtn.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -426,30 +404,40 @@ public class LabAreaJPanel extends javax.swing.JPanel {
                 bpNoRadiobtnActionPerformed(evt);
             }
         });
-        add(bpNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 320, -1, -1));
+        add(bpNoRadiobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 470, -1, -1));
 
         lblBP.setBackground(new java.awt.Color(0, 0, 0));
         lblBP.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblBP.setText("Blood Pressure:");
-        add(lblBP, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 320, 110, -1));
+        add(lblBP, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, 120, -1));
 
         lblPulserec.setBackground(new java.awt.Color(0, 0, 0));
         lblPulserec.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblPulserec.setText("Pulse:");
-        add(lblPulserec, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 290, -1, -1));
+        add(lblPulserec, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, -1, -1));
 
         progbarPulse.setBackground(new java.awt.Color(0, 0, 0));
         progbarPulse.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         progbarPulse.setBorder(null);
-        add(progbarPulse, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 290, -1, -1));
+        add(progbarPulse, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 440, -1, 20));
 
         barBP.setBackground(new java.awt.Color(0, 0, 0));
         barBP.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         barBP.setBorder(null);
-        add(barBP, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 320, -1, -1));
+        add(barBP, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 470, -1, 20));
 
-        bgpic.setText("LAB WORK AREA");
-        add(bgpic, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Laboratory");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1440, -1));
+
+        lblTitle.setBackground(new java.awt.Color(0, 0, 0));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
+
+        lblTo1.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
+        lblTo1.setText("To: ");
+        add(lblTo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 690, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
@@ -680,7 +668,6 @@ public class LabAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JProgressBar barFinal;
     private javax.swing.JProgressBar barTemp;
     private javax.swing.JProgressBar barVitalsign;
-    private javax.swing.JLabel bgpic;
     private javax.swing.JRadioButton bpNoRadiobtn;
     private javax.swing.JRadioButton bpYesRadiobtn;
     private javax.swing.JButton btnGenReport;
@@ -690,6 +677,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton coldYesRadiobtn;
     private javax.swing.JRadioButton dosageNoRadiobtn;
     private javax.swing.JRadioButton dosageYesRadiobtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblBP;
@@ -706,6 +694,7 @@ public class LabAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblTemp;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTo;
+    private javax.swing.JLabel lblTo1;
     private javax.swing.JLabel lblVital;
     private javax.swing.JLabel lblcold;
     private javax.swing.JLabel lblresult;
@@ -713,9 +702,6 @@ public class LabAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JProgressBar progbarPulse;
     private javax.swing.JRadioButton pulseNoRadiobtn;
     private javax.swing.JRadioButton pulseYesRadiobtn;
-    private javax.swing.JSeparator separatorLine;
-    private javax.swing.JSeparator separatorLine1;
-    private javax.swing.JSeparator separatorLine2;
     private javax.swing.JTable tab1;
     private javax.swing.JRadioButton tempNoRadiobtn;
     private javax.swing.JRadioButton tempYesRadiobtn;

@@ -162,6 +162,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         menuPanel.add(threePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, -1, 50));
 
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
         menuPanel.add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 810, 230, 30));
@@ -212,7 +213,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         setColor(onePanel);
         resetColor(new JPanel[]{twoPanel,threePanel});
-        ManageNetworkPanel manageNetworkPanel = new ManageNetworkPanel(cardWorkPanel, ecosystem);
+        ManageRegionPanel manageNetworkPanel = new ManageRegionPanel(cardWorkPanel, ecosystem);
         cardWorkPanel.add("ManageNetworkJPanel",manageNetworkPanel);
         CardLayout layout = (CardLayout) cardWorkPanel.getLayout();
         layout.next(cardWorkPanel);

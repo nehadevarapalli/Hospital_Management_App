@@ -62,10 +62,11 @@ public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblVacc = new javax.swing.JTable();
         btnRequest = new javax.swing.JButton();
-        lblTitle = new javax.swing.JLabel();
-        cardRequestPanel = new javax.swing.JPanel();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
+        cardRequestPanel = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -93,7 +94,7 @@ public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
         tblVacc.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblVacc);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 420, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 630, 180));
 
         btnRequest.setBackground(new java.awt.Color(255, 255, 255));
         btnRequest.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -103,26 +104,31 @@ public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
                 btnRequestActionPerformed(evt);
             }
         });
-        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, -1, -1));
+        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, -1, -1));
+
+        lblTxt.setBackground(new java.awt.Color(0, 0, 0));
+        lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
+        lblTxt.setText("Currently Logged in as:");
+        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 40, -1, 30));
+
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
+        lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
+        lblVal.setText("<value>");
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Vaccine Inventory");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 0, 1540, 850));
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
 
         cardRequestPanel.setBackground(new java.awt.Color(255, 255, 255));
         cardRequestPanel.setMinimumSize(new java.awt.Dimension(670, 848));
         cardRequestPanel.setPreferredSize(new java.awt.Dimension(670, 848));
         cardRequestPanel.setLayout(new java.awt.CardLayout());
         add(cardRequestPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 90, 50, -1));
-
-        lblTxt.setBackground(new java.awt.Color(0, 0, 0));
-        lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        lblTxt.setText("Currently Logged in as:");
-        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, 30));
-
-        lblVal.setBackground(new java.awt.Color(0, 0, 0));
-        lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
-        lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 160, 230, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestActionPerformed
@@ -148,6 +154,7 @@ public class PurchaseWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRequest;
     private javax.swing.JPanel cardRequestPanel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTxt;

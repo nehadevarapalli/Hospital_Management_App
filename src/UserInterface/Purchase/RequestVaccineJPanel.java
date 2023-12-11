@@ -82,7 +82,7 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
         lblQuty = new javax.swing.JLabel();
         txtQuty = new javax.swing.JTextField();
         btnOrd = new javax.swing.JButton();
-        separatorLine = new javax.swing.JSeparator();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -92,7 +92,7 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
 
         lblManufacturerselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblManufacturerselect.setText("Select Manufacturer:");
-        add(lblManufacturerselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 220, -1, -1));
+        add(lblManufacturerselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, -1));
 
         cmbManufacturerselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbManufacturerselect.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -101,11 +101,11 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
                 cmbManufacturerselectActionPerformed(evt);
             }
         });
-        add(cmbManufacturerselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 210, -1, -1));
+        add(cmbManufacturerselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, -1, -1));
 
         lblQuty.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblQuty.setText("Enter Quantity:");
-        add(lblQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 270, -1, -1));
+        add(lblQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, -1, -1));
 
         txtQuty.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtQuty.setBorder(null);
@@ -114,7 +114,7 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
                 txtQutyKeyTyped(evt);
             }
         });
-        add(txtQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 270, 180, -1));
+        add(txtQuty, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 340, 180, -1));
 
         btnOrd.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnOrd.setText("Order");
@@ -123,12 +123,12 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
                 btnOrdActionPerformed(evt);
             }
         });
-        add(btnOrd, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 360, -1, -1));
+        add(btnOrd, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 430, -1, -1));
 
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 290, 180, -1));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Purchase Vaccines");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(1440, 848));
@@ -262,9 +262,9 @@ public class RequestVaccineJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnOrd;
     private javax.swing.JComboBox<String> cmbManufacturerselect;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblManufacturerselect;
     private javax.swing.JLabel lblQuty;
-    private javax.swing.JSeparator separatorLine;
     private javax.swing.JTextField txtQuty;
     // End of variables declaration//GEN-END:variables
 

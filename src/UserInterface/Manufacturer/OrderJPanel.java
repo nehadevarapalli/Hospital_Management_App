@@ -65,7 +65,7 @@ public class OrderJPanel extends javax.swing.JPanel {
         txtComm = new javax.swing.JTextField();
         btnApproved = new javax.swing.JButton();
         btnRejected = new javax.swing.JButton();
-        separatorLine = new javax.swing.JSeparator();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -88,16 +88,16 @@ public class OrderJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblOrder);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 375, 275));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 375, 275));
 
         lblComm.setBackground(new java.awt.Color(0, 0, 0));
         lblComm.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblComm.setText("Comments:");
-        add(lblComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, -1, -1));
+        add(lblComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 540, -1, -1));
 
         txtComm.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtComm.setBorder(null);
-        add(txtComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 230, -1));
+        add(txtComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 540, 230, -1));
 
         btnApproved.setBackground(new java.awt.Color(0, 0, 0));
         btnApproved.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -107,7 +107,7 @@ public class OrderJPanel extends javax.swing.JPanel {
                 btnApprovedActionPerformed(evt);
             }
         });
-        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, -1, -1));
+        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 590, -1, -1));
 
         btnRejected.setBackground(new java.awt.Color(0, 0, 0));
         btnRejected.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -117,16 +117,15 @@ public class OrderJPanel extends javax.swing.JPanel {
                 btnRejectedActionPerformed(evt);
             }
         });
-        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 350, -1, -1));
+        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 590, -1, -1));
 
-        separatorLine.setBackground(new java.awt.Color(0, 0, 0));
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, 220, 10));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Manage Orders");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1440, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApprovedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApprovedActionPerformed
@@ -202,9 +201,9 @@ public class OrderJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnApproved;
     private javax.swing.JButton btnRejected;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblComm;
-    private javax.swing.JSeparator separatorLine;
     private javax.swing.JTable tblOrder;
     private javax.swing.JTextField txtComm;
     // End of variables declaration//GEN-END:variables

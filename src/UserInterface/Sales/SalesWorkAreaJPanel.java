@@ -72,10 +72,10 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
         btnApproved = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblOrder = new javax.swing.JTable();
-        separatorLine = new javax.swing.JSeparator();
-        lblTitle = new javax.swing.JLabel();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1440, 848));
@@ -102,7 +102,7 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
         tblVacc.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblVacc);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 460, 480, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 600, 480, 180));
 
         btnRejected.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnRejected.setText("Reject");
@@ -111,15 +111,15 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
                 btnRejectedActionPerformed(evt);
             }
         });
-        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 370, -1, -1));
+        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 510, -1, -1));
 
         txtComm.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtComm.setBorder(null);
-        add(txtComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 330, 190, 20));
+        add(txtComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 470, 190, 20));
 
         lblComm.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblComm.setText("Comments:");
-        add(lblComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 330, -1, -1));
+        add(lblComm, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, -1, -1));
 
         btnApproved.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnApproved.setText("Approve");
@@ -128,7 +128,7 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
                 btnApprovedActionPerformed(evt);
             }
         });
-        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 370, -1, -1));
+        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 510, -1, -1));
 
         tblOrder.setForeground(new java.awt.Color(36, 47, 65));
         tblOrder.setModel(new javax.swing.table.DefaultTableModel(
@@ -149,23 +149,24 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
         tblOrder.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane2.setViewportView(tblOrder);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 130, 480, 180));
-
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 350, 180, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 480, 180));
 
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");
         add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, -1, 30));
 
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
         add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 30, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Orders");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApprovedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApprovedActionPerformed
@@ -282,13 +283,13 @@ public class SalesWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApproved;
     private javax.swing.JButton btnRejected;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblComm;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTxt;
     private javax.swing.JLabel lblVal;
-    private javax.swing.JSeparator separatorLine;
     private javax.swing.JTable tblOrder;
     private javax.swing.JTable tblVacc;
     private javax.swing.JTextField txtComm;

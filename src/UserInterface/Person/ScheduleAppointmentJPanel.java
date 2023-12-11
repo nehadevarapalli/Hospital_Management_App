@@ -74,9 +74,9 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
         btnReq = new javax.swing.JButton();
         lblemail = new javax.swing.JLabel();
         txtemail = new javax.swing.JTextField();
-        separatorLine = new javax.swing.JSeparator();
-        lblTitle = new javax.swing.JLabel();
         iconBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -88,12 +88,12 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
         lblHosp.setBackground(new java.awt.Color(0, 0, 0));
         lblHosp.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblHosp.setText("Select Hospital:");
-        add(lblHosp, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, -1, -1));
+        add(lblHosp, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
 
         cmbHosp.setBackground(new java.awt.Color(0, 0, 0));
         cmbHosp.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbHosp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(cmbHosp, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 220, -1, -1));
+        add(cmbHosp, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 270, -1, -1));
 
         btnReq.setBackground(new java.awt.Color(255, 255, 255));
         btnReq.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -103,33 +103,32 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
                 btnReqActionPerformed(evt);
             }
         });
-        add(btnReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 330, -1, -1));
+        add(btnReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, -1, -1));
 
         lblemail.setBackground(new java.awt.Color(0, 0, 0));
         lblemail.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblemail.setText("Enter your Email:");
-        add(lblemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
+        add(lblemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, -1, -1));
 
         txtemail.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtemail.setBorder(null);
-        add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 260, 290, 30));
+        add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, 290, 30));
 
-        separatorLine.setBackground(new java.awt.Color(0, 0, 0));
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, 280, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
-
-        iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
+        iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/exit.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 iconBackMousePressed(evt);
             }
         });
         add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 20, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Schedule Appointments");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnReqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReqActionPerformed
@@ -197,10 +196,10 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cmbHosp;
     private javax.swing.JLabel iconBack;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblHosp;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblemail;
-    private javax.swing.JSeparator separatorLine;
     private javax.swing.JTextField txtemail;
     // End of variables declaration//GEN-END:variables
 }

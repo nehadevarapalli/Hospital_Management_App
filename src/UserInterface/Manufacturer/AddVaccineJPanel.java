@@ -56,33 +56,27 @@ public class AddVaccineJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblAddVacc = new javax.swing.JLabel();
         lblName = new javax.swing.JLabel();
         lblSci = new javax.swing.JLabel();
         btnAddVacc = new javax.swing.JButton();
         txtName = new javax.swing.JTextField();
         txtScientific = new javax.swing.JTextField();
-        separatorLine = new javax.swing.JSeparator();
-        separatorLine1 = new javax.swing.JSeparator();
-        lblTitle = new javax.swing.JLabel();
         iconBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblAddVacc.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        lblAddVacc.setText("Add Vaccine");
-        add(lblAddVacc, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 50, -1, -1));
-
         lblName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblName.setText("Name:");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, -1, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 290, -1, -1));
 
         lblSci.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblSci.setText("Scientific Name:");
-        add(lblSci, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, -1, -1));
+        add(lblSci, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, -1, -1));
 
         btnAddVacc.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnAddVacc.setText("Add");
@@ -91,7 +85,7 @@ public class AddVaccineJPanel extends javax.swing.JPanel {
                 btnAddVaccActionPerformed(evt);
             }
         });
-        add(btnAddVacc, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, -1, -1));
+        add(btnAddVacc, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, -1, -1));
 
         txtName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtName.setBorder(null);
@@ -100,32 +94,27 @@ public class AddVaccineJPanel extends javax.swing.JPanel {
                 txtNameActionPerformed(evt);
             }
         });
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, 250, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, 250, -1));
 
         txtScientific.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtScientific.setBorder(null);
-        add(txtScientific, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, 250, -1));
+        add(txtScientific, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, 250, -1));
 
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, 220, 10));
-
-        separatorLine1.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 220, 10));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
-
-        iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
+        iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/exit.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 iconBackMousePressed(evt);
             }
         });
         add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 20, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage vaccine");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 1440, -1));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
@@ -173,12 +162,10 @@ public class AddVaccineJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddVacc;
     private javax.swing.JLabel iconBack;
-    private javax.swing.JLabel lblAddVacc;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblSci;
     private javax.swing.JLabel lblTitle;
-    private javax.swing.JSeparator separatorLine;
-    private javax.swing.JSeparator separatorLine1;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtScientific;
     // End of variables declaration//GEN-END:variables

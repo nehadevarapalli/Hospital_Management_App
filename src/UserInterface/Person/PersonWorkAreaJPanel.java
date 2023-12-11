@@ -70,11 +70,15 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
         tblVaccineReq = new javax.swing.JTable();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblAppoinment = new javax.swing.JTable();
-        lblTitle = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
         lblTxt = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tbPharma = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         jLabel3.setText("jLabel3");
 
@@ -95,7 +99,7 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
                 btnVaccActionPerformed(evt);
             }
         });
-        add(btnVacc, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, -1, -1));
+        add(btnVacc, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, -1, -1));
 
         btnApointment.setBackground(new java.awt.Color(255, 255, 255));
         btnApointment.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
@@ -105,7 +109,7 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
                 btnApointmentActionPerformed(evt);
             }
         });
-        add(btnApointment, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+        add(btnApointment, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 490, -1, -1));
 
         jScrollPane2.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -126,7 +130,7 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
         tblVaccineReq.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane2.setViewportView(tblVaccineReq);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 610, 140));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 610, 140));
 
         jScrollPane1.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -147,20 +151,17 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
         tblAppoinment.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblAppoinment);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 640, 150));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 290, 640, 150));
 
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
-
-        lblVal.setBackground(new java.awt.Color(0, 0, 0));
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 20, 230, 30));
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 230, 30));
 
         lblTxt.setBackground(new java.awt.Color(0, 0, 0));
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");
-        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 20, -1, 30));
+        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 30, -1, 30));
 
         jScrollPane3.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -181,7 +182,24 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
         tbPharma.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane3.setViewportView(tbPharma);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 270, 580, 140));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 600, 580, 150));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Bookings");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
+
+        jLabel2.setText("My Vaccinations:");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, -1));
+
+        jLabel4.setText("Medications:");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 570, -1, -1));
+
+        jLabel5.setText("My Appointments:");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 250, -1, -1));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVaccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVaccActionPerformed
@@ -214,7 +232,7 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
         }
         else{
-            JOptionPane.showMessageDialog(this, "You can only book an appointment if you have received or a vaccination scheduled!!");
+            JOptionPane.showMessageDialog(this, "You can only book an appointment if you have a vaccination scheduled!!");
             return;
         }
     }//GEN-LAST:event_btnApointmentActionPerformed
@@ -223,7 +241,11 @@ public class PersonWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApointment;
     private javax.swing.JButton btnVacc;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

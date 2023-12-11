@@ -101,8 +101,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         cmbOrg = new javax.swing.JComboBox();
         lblRole = new javax.swing.JLabel();
         cmbRolebox = new javax.swing.JComboBox();
-        separatorLine1 = new javax.swing.JSeparator();
-        separatorLine2 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -117,16 +116,16 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 btnCreateActionPerformed(evt);
             }
         });
-        add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 370, -1, -1));
+        add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 620, -1, -1));
 
         txtUsernamee.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtUsernamee.setForeground(new java.awt.Color(255, 255, 255));
         txtUsernamee.setBorder(null);
-        add(txtUsernamee, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 230, -1));
+        add(txtUsernamee, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 520, 230, -1));
 
         lblUsernamee.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblUsernamee.setText("Username:");
-        add(lblUsernamee, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, -1, -1));
+        add(lblUsernamee, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 520, -1, -1));
 
         tblUser.setForeground(new java.awt.Color(0, 204, 204));
         tblUser.setModel(new javax.swing.table.DefaultTableModel(
@@ -159,11 +158,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             tblUser.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 375, 179));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 375, 179));
 
         lblPass.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblPass.setText("Password:");
-        add(lblPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, -1, -1));
+        add(lblPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 570, -1, -1));
 
         txtPass.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtPass.setForeground(new java.awt.Color(255, 255, 255));
@@ -173,11 +172,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 txtPassActionPerformed(evt);
             }
         });
-        add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 230, -1));
+        add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 570, 230, -1));
 
         lblEmp.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblEmp.setText("Employee:");
-        add(lblEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
+        add(lblEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, -1));
 
         cmbEmp.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbEmp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -186,11 +185,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 cmbEmpActionPerformed(evt);
             }
         });
-        add(cmbEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 300, -1));
+        add(cmbEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, 300, -1));
 
         lblOrg.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblOrg.setText("Organization:");
-        add(lblOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, -1));
+        add(lblOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, -1, -1));
 
         cmbOrg.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbOrg.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -199,11 +198,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 cmbOrgActionPerformed(evt);
             }
         });
-        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 300, -1));
+        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 370, 300, -1));
 
         lblRole.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblRole.setText("Role:");
-        add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 40, -1));
+        add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 40, -1));
 
         cmbRolebox.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbRolebox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -212,19 +211,12 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 cmbRoleboxActionPerformed(evt);
             }
         });
-        add(cmbRolebox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 300, -1));
+        add(cmbRolebox, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 470, 300, -1));
 
-        separatorLine1.setBackground(new java.awt.Color(0, 0, 0));
-        separatorLine1.setForeground(new java.awt.Color(255, 255, 255));
-        separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 290, 230, 10));
-
-        separatorLine2.setBackground(new java.awt.Color(0, 0, 0));
-        separatorLine2.setForeground(new java.awt.Color(255, 255, 255));
-        separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 230, 10));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Users");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 140, 1190, -1));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
@@ -283,6 +275,7 @@ String userName = txtUsernamee.getText();
     private javax.swing.JComboBox cmbEmp;
     private javax.swing.JComboBox cmbOrg;
     private javax.swing.JComboBox cmbRolebox;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblEmp;
     private javax.swing.JLabel lblOrg;
@@ -290,8 +283,6 @@ String userName = txtUsernamee.getText();
     private javax.swing.JLabel lblRole;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblUsernamee;
-    private javax.swing.JSeparator separatorLine1;
-    private javax.swing.JSeparator separatorLine2;
     private javax.swing.JTable tblUser;
     private javax.swing.JTextField txtPass;
     private javax.swing.JTextField txtUsernamee;

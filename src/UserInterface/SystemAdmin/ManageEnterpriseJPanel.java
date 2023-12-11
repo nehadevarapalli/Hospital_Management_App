@@ -84,7 +84,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         lblEnterpriseselect = new javax.swing.JLabel();
         cmbEnterpriseselect = new javax.swing.JComboBox();
         btnSub = new javax.swing.JButton();
-        separatorLine = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -105,11 +104,11 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Enterprise Name", "Network", "Type"
+                "Enterprise", "Region", "Type"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, true, true
+                false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -119,19 +118,19 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         tblEnterpriseselect.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblEnterpriseselect);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 530, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 220, 530, 180));
 
         lblNetworkselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        lblNetworkselect.setText("Network:");
-        add(lblNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
+        lblNetworkselect.setText("Region:");
+        add(lblNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 500, -1, -1));
 
         cmbNetworkselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbNetworkselect.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(cmbNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 136, -1));
+        add(cmbNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 490, 136, -1));
 
         lblName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblName.setText("Name:");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, -1, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 610, -1, -1));
 
         txtName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtName.setBorder(null);
@@ -140,15 +139,15 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 txtNameActionPerformed(evt);
             }
         });
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 140, 190, 20));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 610, 190, 20));
 
         lblEnterpriseselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblEnterpriseselect.setText("Enterprise Type:");
-        add(lblEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, -1, -1));
+        add(lblEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 550, -1, -1));
 
         cmbEnterpriseselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbEnterpriseselect.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(cmbEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 100, 136, -1));
+        add(cmbEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 550, 136, -1));
 
         btnSub.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnSub.setText("Submit");
@@ -157,12 +156,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 btnSubActionPerformed(evt);
             }
         });
-        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 220, -1, -1));
-
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 160, 180, -1));
+        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 670, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
@@ -228,7 +222,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblEnterpriseselect;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblNetworkselect;
-    private javax.swing.JSeparator separatorLine;
     private javax.swing.JTable tblEnterpriseselect;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables

@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author nehadevarapalli
  */
-public class ManageNetworkPanel extends javax.swing.JPanel {
+public class ManageRegionPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private Ecosystem system;
@@ -28,7 +28,7 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
      *
      * Creates new form ManageNetworkJPanel
      */
-    public ManageNetworkPanel(JPanel userProcessContainer, Ecosystem system) {
+    public ManageRegionPanel(JPanel userProcessContainer, Ecosystem system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;
@@ -62,7 +62,7 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
         lblName = new javax.swing.JLabel();
         btnSub = new javax.swing.JButton();
         txtName = new javax.swing.JTextField();
-        separatorLine = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -108,11 +108,11 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
             tblNetworkselect.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, 440, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 440, 180));
 
         lblName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblName.setText("Name:");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 390, -1, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 590, -1, -1));
 
         btnSub.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnSub.setText("Submit");
@@ -121,16 +121,16 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
                 btnSubActionPerformed(evt);
             }
         });
-        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 390, -1, -1));
+        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 660, -1, -1));
 
         txtName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtName.setBorder(null);
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 390, 181, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 590, 181, -1));
 
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 410, 180, -1));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Regions");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 1190, -1));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
@@ -153,10 +153,10 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSub;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblTitle;
-    private javax.swing.JSeparator separatorLine;
     private javax.swing.JTable tblNetworkselect;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables

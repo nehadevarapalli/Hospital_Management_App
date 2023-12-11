@@ -71,6 +71,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         btnRejected = new javax.swing.JButton();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -85,7 +86,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 btnTestActionPerformed(evt);
             }
         });
-        add(btnTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 330, -1, -1));
+        add(btnTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 620, 180, -1));
 
         jScrollPane1.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -107,7 +108,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblReq);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 680, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 680, 180));
 
         btnApproved.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnApproved.setText("Approve Appointment");
@@ -116,10 +117,10 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 btnApprovedActionPerformed(evt);
             }
         });
-        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, -1, -1));
+        add(btnApproved, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, -1, -1));
 
-        appointmentjDateChooser.setBackground(new java.awt.Color(220, 241, 251));
-        add(appointmentjDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 40, -1, -1));
+        appointmentjDateChooser.setBackground(new java.awt.Color(0, 0, 51));
+        add(appointmentjDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 320, -1, -1));
 
         btnPrescribedmed.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnPrescribedmed.setText("Prescribe Medicine");
@@ -128,7 +129,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 btnPrescribedmedActionPerformed(evt);
             }
         });
-        add(btnPrescribedmed, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, -1, -1));
+        add(btnPrescribedmed, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 560, 180, -1));
 
         btnRejected.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnRejected.setText("Reject Appointment");
@@ -137,17 +138,22 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 btnRejectedActionPerformed(evt);
             }
         });
-        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, -1, -1));
+        add(btnRejected, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 620, -1, -1));
 
         lblTxt.setBackground(new java.awt.Color(0, 0, 0));
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");
-        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, -1, 30));
+        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, -1, 30));
 
-        lblVal.setBackground(new java.awt.Color(0, 0, 0));
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 30, 230, 30));
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 20, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Patients");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 140, 1190, -1));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
@@ -288,6 +294,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnPrescribedmed;
     private javax.swing.JButton btnRejected;
     private javax.swing.JButton btnTest;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTxt;

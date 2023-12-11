@@ -97,9 +97,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         txtName = new javax.swing.JTextField();
         lblName = new javax.swing.JLabel();
         txtPass = new javax.swing.JPasswordField();
-        separatorLine = new javax.swing.JSeparator();
-        separatorLine1 = new javax.swing.JSeparator();
-        separatorLine2 = new javax.swing.JSeparator();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -120,11 +118,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Enterprise Name", "Network", "Username"
+                "Enterprise", "Region", "Username"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, true, true
+                false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -134,11 +132,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         tblEnterpriselect.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblEnterpriselect);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 560, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 560, 180));
 
         lblNetworkselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        lblNetworkselect.setText("Network:");
-        add(lblNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 30, -1, -1));
+        lblNetworkselect.setText("Region:");
+        add(lblNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 510, -1, -1));
 
         cmbNetworkselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbNetworkselect.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -147,20 +145,20 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 cmbNetworkselectActionPerformed(evt);
             }
         });
-        add(cmbNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 136, -1));
+        add(cmbNetworkselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 510, 136, -1));
 
         lblUsernamee.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblUsernamee.setText("Username:");
-        add(lblUsernamee, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 120, -1, -1));
+        add(lblUsernamee, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 600, -1, -1));
 
         txtUsername.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtUsername.setBorder(null);
-        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 120, 210, 20));
+        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 600, 210, 20));
 
         lblEnterpriseselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblEnterpriseselect.setText("Enterprise:");
         lblEnterpriseselect.setToolTipText("");
-        add(lblEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 70, -1, -1));
+        add(lblEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 550, -1, -1));
 
         cmbEnterpriseselect.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         cmbEnterpriseselect.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -169,7 +167,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 cmbEnterpriseselectActionPerformed(evt);
             }
         });
-        add(cmbEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 70, 136, -1));
+        add(cmbEnterpriseselect, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 550, 136, -1));
 
         btnSub.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         btnSub.setText("Submit");
@@ -178,19 +176,19 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 btnSubActionPerformed(evt);
             }
         });
-        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 250, -1, -1));
+        add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 760, -1, -1));
 
         lblPass.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblPass.setText("Password:");
-        add(lblPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, -1, -1));
+        add(lblPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 650, -1, -1));
 
         txtName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtName.setBorder(null);
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 180, 20));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 700, 210, 20));
 
         lblName.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblName.setText("Name:");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 210, -1, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 700, -1, -1));
 
         txtPass.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         txtPass.setBorder(null);
@@ -199,22 +197,12 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 txtPassActionPerformed(evt);
             }
         });
-        add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 160, 210, 20));
+        add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 650, 210, 20));
 
-        separatorLine.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 220, 180, -1));
-
-        separatorLine1.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 180, -1));
-
-        separatorLine2.setForeground(new java.awt.Color(0, 0, 0));
-        separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
-        separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, 180, -1));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Manage Enterprises");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 850));
@@ -294,15 +282,13 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox cmbEnterpriseselect;
     private javax.swing.JComboBox cmbNetworkselect;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblEnterpriseselect;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblNetworkselect;
     private javax.swing.JLabel lblPass;
     private javax.swing.JLabel lblUsernamee;
-    private javax.swing.JSeparator separatorLine;
-    private javax.swing.JSeparator separatorLine1;
-    private javax.swing.JSeparator separatorLine2;
     private javax.swing.JTable tblEnterpriselect;
     private javax.swing.JTextField txtName;
     private javax.swing.JPasswordField txtPass;

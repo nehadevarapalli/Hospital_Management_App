@@ -54,10 +54,11 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
         btnavailable = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblMedicallist = new javax.swing.JTable();
-        lblTitle = new javax.swing.JLabel();
         btnNotavailable = new javax.swing.JButton();
         lblTxt = new javax.swing.JLabel();
         lblVal = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -71,7 +72,7 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
                 btnavailableActionPerformed(evt);
             }
         });
-        add(btnavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, -1));
+        add(btnavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, -1, -1));
 
         tblMedicallist.setForeground(new java.awt.Color(36, 47, 65));
         tblMedicallist.setModel(new javax.swing.table.DefaultTableModel(
@@ -92,10 +93,7 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
         tblMedicallist.setFocusable(false);
         jScrollPane1.setViewportView(tblMedicallist);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 630, 180));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 630, 180));
 
         btnNotavailable.setText("Not Available");
         btnNotavailable.addActionListener(new java.awt.event.ActionListener() {
@@ -103,15 +101,24 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
                 btnNotavailableActionPerformed(evt);
             }
         });
-        add(btnNotavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, -1, -1));
+        add(btnNotavailable, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 560, -1, -1));
 
         lblTxt.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         lblTxt.setText("Currently Logged in as:");
-        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, -1, 30));
+        add(lblTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 60, -1, 30));
 
+        lblVal.setBackground(new java.awt.Color(255, 255, 255));
         lblVal.setFont(new java.awt.Font("Helvetica Neue", 1, 22)); // NOI18N
         lblVal.setText("<value>");
-        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 230, 30));
+        add(lblVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 60, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Manage Medications");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1440, -1));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/gradient-big.jpg"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnavailableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnavailableActionPerformed
@@ -144,6 +151,7 @@ public class PharmaWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNotavailable;
     private javax.swing.JButton btnavailable;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTxt;
